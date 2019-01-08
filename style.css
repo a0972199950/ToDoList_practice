@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Microsoft JhengHei";
+}
+
+body{
+    background: #02AAB0;
+    background: -webkit-linear-gradient(to left, #00CDAC, #02AAB0);
+    background: linear-gradient(to left, #00CDAC, #02AAB0);
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* header */
+#header{
+    padding: 2rem;
+    background: #2D7FB7;
+    margin: 0 0 4rem 0;
+}
+
+#header h1{
+    font-size: 4rem;
+    color: white;
+}
+
+
+/* todoList box */
+#error{
+    color: red;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+#todoListBox{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#todoListBox h1{
+    background: #2D7FB7;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+
+/* input-area */
+.input-area{
+    display: flex;
+}
+
+.input-area *{
+    font-size: 1.6rem;
+}
+
+.input-area input{
+    flex-grow: 1;
+    padding: .8rem;
+    background: #F7F7F7;
+    color: #2D7FB7;
+}
+
+.input-area button{
+    background: #4CAF50;
+    color: white;
+    font-weight: 800;
+    border: none;
+    padding: .8rem;
+    cursor: pointer;
+}
+
+
+/* todoList li */
+#todoList li{
+    font-size: 1.8em;
+    height: 4rem;
+    line-height: 4rem;
+    color: rgb(112, 112, 112);
+    padding: 0 .5rem 0 0;
+}
+
+#todoList li:nth-child(2n){
+    background: #F7F7F7;
+}
+
+#todoList li:nth-child(2n-1){
+    background: #FFFFFF;
+}
+
+#todoList .complete-btn{
+    width: 0;
+    background: red;
+    color: white;
+    display: inline-block;
+    height: 4rem;
+    text-align: center;
+    margin: 0 .5rem 0 0;
+    transition: linear .2s;
+}
+
+#todoList li:hover .complete-btn{
+    width: 40px;
+}
+
+#todoList .created-at{
+    float: right;
+    color: rgb(158, 158, 158);
+    font-size: 1.2rem;
+}
